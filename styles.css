@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 4fr;
+}
+
+.header {
+  background-color: rgba(255, 255, 255, 255)
+}
+
+.sidebar {
+  background-color: rgba(25,146,212,255);
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.main-content {
+  background-color: rgba(226,232,240,255);
+}
