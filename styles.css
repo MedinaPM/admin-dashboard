@@ -17,8 +17,66 @@ body {
   background-color: rgba(25,146,212,255);
   grid-row-start: 1;
   grid-row-end: 3;
+  display: grid;
+  gap: 55px;
+  align-content: start;
+  padding: 18px;
+}
+
+.branding {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-content: center;
+}
+
+.menu,
+.support {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  row-gap: 15px;
+}
+
+.whiteIcon {
+  filter: invert(100%) sepia(88%) saturate(48%) hue-rotate(23deg) brightness(111%) contrast(115%);
+}
+
+.large,
+.small {
+  justify-self: center;
+}
+
+.large {
+  height: 55px;
+}
+
+.small {
+  height: 30px;
+}
+
+.pageName,
+.nav {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 600;
+  margin: 0px;
+  align-self: center;
+}
+
+.pageName {
+  font-size: 1.7rem;
+}
+
+.nav {
+  font-size: 1.2rem;
 }
 
 .main-content {
   background-color: rgba(226,232,240,255);
+}
+
+.dummyMenu {
+  height: 55px;
+  width: 250px;
+  margin: 10px;
+  background-color: rgb(100, 170, 190);
 }
