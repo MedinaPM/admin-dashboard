@@ -1,3 +1,6 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
 body {
   padding: 0;
   margin: 0;
@@ -15,15 +18,18 @@ body {
 .container {
   height: 100vh;
   display: grid;
-  grid-template: 1fr 4fr / 1fr 3.75fr;
+  grid-template: 1fr 4.7fr / 1fr 3.75fr;
 }
 
 .header {
-  background-color: rgba(255, 255, 255, 255)
+  background-color: rgba(255, 255, 255, 255);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1.5fr;
+  padding: 10px 40px 0px;
 }
 
 .sidebar {
-  background-color: rgba(25,146,212,255);
   grid-row-start: 1;
   grid-row-end: 3;
   display: grid;
@@ -31,6 +37,11 @@ body {
   align-content: start;
   padding-top: 17px;
   padding-left: 4px;
+}
+
+.sidebar,
+button {
+  background-color: rgba(25,146,212,255);
 }
 
 .branding {
@@ -63,13 +74,13 @@ body {
   height: 47px;
 }
 
-.small {
+.small,
+.blackIcon {
   height: 23px;
 }
 
 .pageName,
 .nav {
-  font-family: 'Roboto', sans-serif;
   color: white;
   font-weight: 600;
   margin: 0px;
@@ -84,6 +95,95 @@ body {
   font-size: 1.28rem;
 }
 
-.main-content {
+.main-content,
+.search input {
   background-color: rgba(226,232,240,255);
+}
+
+.search input {
+  border: none;
+  border-radius: 28px;
+  height: 28px;
+  width: 600px;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.user .avatar {
+  height: 70px;
+  width: 70px;
+}
+
+.search,
+.login,
+.user,
+.links {
+  align-items: center;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.login p {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: right;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  justify-items: right;
+}
+
+button {
+  color: white;
+  border: none;
+  height: 40px;
+  width: 100px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.greetings h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.greetings h1,
+.greetings p{
+  margin-block: 0.2rem;
+}
+
+.login .blackIcon {
+  margin-left: 90px;
+}
+
+.login p {
+  margin-right: 25px;
+}
+
+.greetings p{
+  font-weight: 500;
 }
